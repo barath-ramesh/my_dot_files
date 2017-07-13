@@ -6,9 +6,9 @@
 ;; Maintainer:
 ;; Created: Fri Jul 17 15:33:56 2015 (-0400)
 ;; Version:
-;; Last-Updated: Tue Jun 21 20:05:09 2016 (-0400)
+;; Last-Updated: Wed Jul 12 23:35:41 2017 (-0500)
 ;;           By: Barath Ramesh
-;;     Update #: 713
+;;     Update #: 714
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -26,6 +26,7 @@
 
 ;;Environment
 (setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/usr/bin:/bin" (getenv "PATH")))
+(setenv "R_LIBS_USER"  "/home/barath/R_library/")
 
 (load "~/.emacs.d/elisps/package_management")
 
