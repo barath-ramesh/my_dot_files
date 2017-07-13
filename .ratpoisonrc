@@ -77,7 +77,7 @@ bind u undo
 bind C-u undo
 
 #spotify
-bind s exec spotify
+# bind m exec spotify
 
 #Make key bindings that allow for the fast switching to ratpoison windows numbered 10 and above.
 bind parenright select 10
