@@ -8,7 +8,7 @@
 ;; Version:
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 18
+;;     Update #: 28
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -23,16 +23,19 @@
 ;;        :weight 'normal
 ;;        :width 'normal)
 
-;;   (when (functionp 'set-fontset-font)
-;;     (set-fontset-font "fontset-default"
-;;        'unicode
-;;        (font-spec :family "DejaVu Sans Mono"
-;;       :width 'normal
-;;       :size 12.4
-;;       :weight 'normal))))
+;; (when (functionp 'set-fontset-font)
+;;   (set-fontset-font "fontset-default"
+;;		    'unicode
+;;		    (font-spec :family "DejaVu Sans Mono"
+;;			       :width 'normal
+;;			       :size 14.4
+;;			       :weight 'normal)))
 
-(set-frame-font "Source Code Pro" nil t)
+(set-frame-font "DejaVu Sans Mono" nil t)
 (set-face-attribute 'default nil :height 140)
+
+;; (set-frame-font "Source Code Pro" nil t)
+;; (set-face-attribute 'default nil :height 168)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; font_options.el ends here

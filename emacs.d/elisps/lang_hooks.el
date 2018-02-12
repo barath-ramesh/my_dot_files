@@ -55,11 +55,11 @@
 (add-hook 'matlab-mode-hook     'auto-make-header)
 
 ;; electric-case mode
-(require 'electric-case)
-(add-hook 'c-mode-hook 'electric-case-mode)
-(add-hook 'c++-mode-hook 'electric-case-mode)
-(add-hook 'cuda-mode-hook 'electric-case-mode)
-(add-hook 'opencl-mode-hook 'electric-case-mode)
+;; (require 'electric-case)
+;; (add-hook 'c-mode-hook 'electric-case-mode)
+;; (add-hook 'c++-mode-hook 'electric-case-mode)
+;; (add-hook 'cuda-mode-hook 'electric-case-mode)
+;; (add-hook 'opencl-mode-hook 'electric-case-mode)
 
 (require 'paredit)
 (add-hook 'matlab-mode-hook 'paredit-mode)

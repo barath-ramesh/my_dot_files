@@ -6,9 +6,9 @@
 ;; Maintainer:
 ;; Created: Sat Jun 11 19:18:58 2016 (-0400)
 ;; Version:
-;; Last-Updated: Sat Jun 11 19:20:30 2016 (-0400)
+;; Last-Updated: Mon Apr 10 14:09:59 2017 (-0400)
 ;;           By: Barath Ramesh
-;;     Update #: 3
+;;     Update #: 5
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -19,10 +19,10 @@
 (require 'auctex-latexmk)
 (auctex-latexmk-setup)
 
-(require 'auto-complete-auctex)
+;; (require 'auto-complete-auctex)
 
-(require 'company-auctex)
-(company-auctex-init)
+;; (require 'company-auctex)
+;; (company-auctex-init)
 
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)

@@ -6,9 +6,9 @@
 ;; Maintainer:
 ;; Created: Sat Jun 11 18:52:50 2016 (-0400)
 ;; Version:
-;; Last-Updated: Mon Jun 20 20:11:16 2016 (-0400)
+;; Last-Updated: Sat Jan 20 19:50:17 2018 (-0500)
 ;;           By: Barath Ramesh
-;;     Update #: 9
+;;     Update #: 15
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -18,7 +18,6 @@
 (setq column-number-mode t)
 (setq column-enforce-mode t)
 (setq column-enforce-column 80)
-
 
 ;; line number mode
 (global-linum-mode 1)
@@ -81,6 +80,13 @@
 			     (char-equal (char-syntax cb) ?\) )
 			     (blink-matching-open))))
     (when matching-text (message matching-text))))
+
+
+;; text wrap
+(add-hook 'text-mode-hook 'auto-fill-mode)
+(setq-default fill-column 64)
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; display_settings.el ends here

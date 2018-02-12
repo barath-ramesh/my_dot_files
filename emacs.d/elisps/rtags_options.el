@@ -8,7 +8,7 @@
 ;; Version:
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 8
+;;     Update #: 9
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -38,7 +38,7 @@
   ;; jump to definition and see the keybindings.
   (rtags-enable-standard-keybindings)
   ;; comment this out if you don't have or don't use helm
-  (setq rtags-use-helm t)
+  ;; (setq rtags-use-helm t)
   ;; company completion setup
   (setq rtags-autostart-diagnostics t)
   (rtags-diagnostics)

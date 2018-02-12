@@ -6,9 +6,9 @@
 ;; Maintainer:
 ;; Created: Sat Jun 11 18:48:31 2016 (-0400)
 ;; Version:
-;; Last-Updated: Tue Jun 21 19:27:59 2016 (-0400)
+;; Last-Updated: Fri Jul 15 11:28:34 2016 (-0400)
 ;;           By: Barath Ramesh
-;;     Update #: 6
+;;     Update #: 7
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -43,5 +43,12 @@
 ;; Volume control
 (global-set-key (kbd "s-,")     'emms-volume-lower)
 (global-set-key (kbd "s-.")     'emms-volume-raise)
+
+;; multiple cursors
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; key_bindings.el ends here

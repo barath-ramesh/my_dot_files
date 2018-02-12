@@ -6,17 +6,24 @@
 ;; Maintainer:
 ;; Created: Fri Jul 17 15:33:56 2015 (-0400)
 ;; Version:
-;; Last-Updated: Wed Jul 12 23:56:17 2017 (-0500)
+;; Last-Updated: Mon Feb 12 11:06:22 2018 (-0500)
 ;;           By: Barath Ramesh
-;;     Update #: 718
+;;     Update #: 800
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Code:
 
 ;;User details
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq user-full-name "Barath Ramesh")
-(setq user-mail-address "something@somthing.com")
+(setq user-mail-address "ramesh@hcs.ufl.edu")
 
 ;; DO not close emacs accidentaly
 (setq kill-emacs-query-functions
@@ -26,7 +33,11 @@
 
 ;;Environment
 (setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/usr/bin:/bin" (getenv "PATH")))
-(setenv "R_LIBS_USER"  "/home/barath/R_library/")
+
+
+;; What is this issue with julia-mode?
+;; (add-to-list 'load-path "~/.emacs.d/elisps/")
+;; (require 'julia-mode)
 
 (load "~/.emacs.d/elisps/package_management")
 
@@ -86,7 +97,7 @@
 
 ;;matlab mode in emacs, replace one in melpa
 ;; (require 'matlab-load)
-(load "~/.emacs.d/elisps/matlab_load")
+;; (load "~/.emacs.d/elisps/matlab_load")
 
 ;;EMMS player, not working yet
 (load "~/.emacs.d/elisps/emms_settings")
@@ -157,11 +168,11 @@
 ;;(enclose-global-mode)
 
 ;; cmake
-(require 'cmake-mode)
-(require 'rtags)
-(cmake-ide-setup)
-(autoload 'cmake-font-lock-activate "cmake-font-lock" nil t)
-(add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
+;; (require 'cmake-mode)
+;; (require 'rtags)
+;; (cmake-ide-setup)
+;; (autoload 'cmake-font-lock-activate "cmake-font-lock" nil t)
+;; (add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
 
 ;; flycheck mode
 (global-flycheck-mode)
@@ -173,18 +184,22 @@
 (global-set-key "\C-c\C-m" 'replace-ctrlms)
 
 ;; tags
-(load "~/.emacs.d/elisps/tags_settings.el")
+;; (load "~/.emacs.d/elisps/tags_settings.el")
 
 ;; CEDET
 ;; (load "~/.emacs.d/elisps/cedet_options.el")
 
 ;; yasnippet
-(require 'yasnippet)
-(yas-global-mode 1)
+;; (require 'yasnippet)
+;; (yas-global-mode 1)
 
-;; tex and auctex
+;; tex, Rnw and auctex
 (load "~/.emacs.d/elisps/tex_utils_settings")
+(add-to-list 'load-path "~/.emacs.d/elisps/ess-knitr/")
+(require 'ess-knitr)
 
+;; ploymode
+(load "~/.emacs.d/elisps/polymode_settings")
 ;; Playing with fonts
 ;; (set-fontset-font "fontset-default" 'gb18030 '("dejavu sans mono" . “unicode-bmp”))
 
@@ -224,8 +239,34 @@
 ;; rtags options
 (load "~/.emacs.d/elisps/rtags_options")
 
+;; multiple cursors
+(require 'multiple-cursors)
 
 ;; auto-complete-clang
 ;; (load "~/.emacs.d/elisps/auto_complete_clang_settings")
+
+
+;; Make TeX and RefTex aware of Snw and Rnw files
+;; (setq reftex-file-extensions
+;;       '(("Snw" "Rnw" "nw" "tex" ".tex" ".ltx") ("bib" ".bib")))
+;; (setq TeX-file-extensions
+;;       '("Snw" "Rnw" "nw" "tex" "sty" "cls" "ltx" "texi" "texinfo"))
+
+;; ;; Lets you do 'C-c C-c Sweave' from your Rnw file
+;; (defun emacsmate-add-Sweave ()
+;;   (add-to-list 'TeX-command-list
+;;	       '("Sweave" "R CMD Sweave %s"
+;;		 TeX-run-command nil (latex-mode) :help "Run Sweave") t)
+;;   (add-to-list 'TeX-command-list
+;;	       '("LatexSweave" "%l %(mode) %s"
+;;		 TeX-run-TeX nil (latex-mode) :help "Run Latex after Sweave") t)
+;;   (setq TeX-command-default "Sweave"))
+
+;; (add-hook 'Rnw-mode-hook 'emacsmate-add-Sweave)
+
+;; To re-compile all packages after major emacs udpate
+;; Has resulted in error: “Symbol's function is void: cl-struct-define”
+;; Magit did not work due to above error
+;; C-u 0 M-x byte-recompile-directory
 
 ;;; .emacs ends here

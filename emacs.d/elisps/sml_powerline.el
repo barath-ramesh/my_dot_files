@@ -8,7 +8,7 @@
 ;; Version:
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 1
+;;     Update #: 2
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -24,6 +24,7 @@
 ;; (custom-set-faces
 ;;  '(sml/prefix ((t (:inherit sml/global :background "#282a2e" :foreground "white"))))
 ;;  '(sml/process ((t (:inherit sml/prefix :background "dim gray")))))
+(setq sml/no-confirm-load-theme t)
 
 ;; (require 'smart-mode-line)
 ;; (setq powerline-arrow-shape 'curve)

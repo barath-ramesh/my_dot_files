@@ -6,9 +6,9 @@
 ;; Maintainer:
 ;; Created: Sat Jun 11 08:22:48 2016 (-0400)
 ;; Version:
-;; Last-Updated: Tue Jun 21 01:01:23 2016 (-0400)
+;; Last-Updated: Wed Aug 30 15:51:36 2017 (-0400)
 ;;           By: Barath Ramesh
-;;     Update #: 34
+;;     Update #: 50
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -24,7 +24,10 @@ package-enable-at-startup
 (add-to-list 'package-archives
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+	     '("melpa" . "https://melpa.milkbox.net/packages/") t)
+
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/") t)
 
 ;; and the old elpa repo
 (add-to-list 'package-archives '("elpa-old" . "http://tromey.com/elpa/"))
@@ -41,22 +44,23 @@ package-enable-at-startup
 			      auto-complete-clang
 			      auto-package-update
 			      ac-slime
-			      ac-etags
+			      ;; ac-etags
+			      auctex
 			      auctex-latexmk
 			      auto-complete-auctex
 			      auto-complete
 			      auto-complete-exuberant-ctags
-			      autofit-frame
+			      ;; autofit-frame
 			      autopair
 			      base16-theme
-			      bookmark+
+			      ;; bookmark+
 			      c-eldoc
 			      clojure-mode
 			      cmake-mode
 			      cmake-ide
 			      cmake-font-lock
 			      cmake-project
-			      cmds-menu
+			      ;; cmds-menu
 			      ;;cpputils-cmake
 			      ;;clojure-test-mode
 			      coffee-mode
@@ -68,27 +72,27 @@ package-enable-at-startup
 			      company-irony
 			      crux
 			      csharp-mode
-			      ctags
+			      ;; ctags
 			      cuda-mode
 			      cyberpunk-theme
-			      dired+
+			      ;; dired+
 			      dired-hacks-utils
 			      ;;doxymacs
 			      deft
 			      eldoc-eval
-			      eldoc-extension
+			      ;; eldoc-extension
 			      electric-case
-			      electric-spacing
+			      ;; electric-spacing
 			      emms
 			      enclose
 			      erlang
 			      ess
-			      etags
-			      etags-select
-			      etags-table
+			      ;; etags
+			      ;; etags-select
+			      ;; etags-table
 			      feature-mode
-			      fit-frame
-			      frame-fns
+			      ;; fit-frame
+			      ;; frame-fns
 			      flycheck
 			      flymake-cursor
 			      flyparens
@@ -101,13 +105,13 @@ package-enable-at-startup
 			      haml-mode
 			      haskell-mode
 			      header2
-			      helm-spotify
-			      help+
+			      ;; help+
 			      highlight
 			      htmlize
 			      image-dired
-			      info+
+			      ;; info+
 			      irony
+			      julia-mode
 			      latex-extra
 			      latex-math-preview
 			      latex-pretty-symbols
@@ -116,13 +120,16 @@ package-enable-at-startup
 			      magit
 			      matlab-mode
 			      markdown-mode
+			      markdown-preview-eww
+			      markdown-preview-mode
 			      marmalade
-			      menu-bar+
-			      misc-cmds
-			      misc-fns
+			      ;; menu-bar+
+			      ;; misc-cmds
+			      ;; misc-fns
 			      monokai-theme
 			      multi-term
-			      naked
+			      multiple-cursors
+			      ;; naked
 			      nlinum
 			      nodejs-repl
 			      ;;nrepl
@@ -134,30 +141,30 @@ package-enable-at-startup
 			      paredit
 			      pianobar
 			      php-mode
+			      polymode
 			      powerline
-			      pp+
+			      ;; pp+
 			      puppet-mode
 			      restclient
 			      rtags
 			      rvm
 			      scala-mode
-			      second-sel
+			      ;; second-sel
 			      smart-mode-line
 			      smart-mode-line-powerline-theme
 			      smex
 			      sml-mode
 			      solarized-theme
-			      spotify
 			      srefactor
-			      strings
-			      subr+
+			      ;; strings
+			      ;; subr+
 			      tangotango-theme
 			      telephone-line
-			      thingatpt+
+			      ;; thingatpt+
 			      twilight-theme
 			      web-mode
 			      whitespace-cleanup-mode
-			      wid-edit+
+			      ;; wid-edit+
 			      writegood-mode
 			      xcscope
 			      yafolding
