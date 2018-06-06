@@ -48,11 +48,11 @@
 (add-hook 'c-mode-hook (setq comment-style 'multi-line))
 ;;(add-hook 'cuda-mode-hook (setq comment-style 'multi-line))
 
-(add-hook 'emacs-lisp-mode-hook 'auto-make-header)
-(add-hook 'cc-mode-common-hook  'auto-make-header)
-(add-hook 'prog-mode-hook       'auto-make-header)
-(add-hook 'cuda-mode-hook       'auto-make-header)
-(add-hook 'matlab-mode-hook     'auto-make-header)
+;; (add-hook 'emacs-lisp-mode-hook 'auto-make-header)
+;; (add-hook 'cc-mode-common-hook  'auto-make-header)
+;; (add-hook 'prog-mode-hook       'auto-make-header)
+;; (add-hook 'cuda-mode-hook       'auto-make-header)
+;; (add-hook 'matlab-mode-hook     'auto-make-header)
 
 ;; electric-case mode
 ;; (require 'electric-case)

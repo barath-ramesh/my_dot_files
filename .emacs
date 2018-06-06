@@ -6,9 +6,9 @@
 ;; Maintainer:
 ;; Created: Fri Jul 17 15:33:56 2015 (-0400)
 ;; Version:
-;; Last-Updated: Mon Feb 12 11:06:22 2018 (-0500)
+;; Last-Updated: Sat Jan 20 19:46:17 2018 (-0500)
 ;;           By: Barath Ramesh
-;;     Update #: 800
+;;     Update #: 798
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -118,7 +118,7 @@
 (load "~/.emacs.d/elisps/vhdl_options")
 
 ;;auto-header
-(load "~/.emacs.d/elisps/auto_header_options")
+;; (load "~/.emacs.d/elisps/auto_header_options")
 
 ;;opencl-mode
 (require 'opencl-mode)
@@ -222,7 +222,7 @@
  'aggressive-indent-dont-indent-if
  '(and (derived-mode-p 'c++-mode 'c-mode)
        (null (string-match "\\([;{}]\\|\\b\\(if\\|for\\|while\\)\\b\\)"
-			   (thing-at-point 'line)))))
+			(thing-at-point 'line)))))
 
 ;; Comapny and Irony for intellisense
 (load "~/.emacs.d/elisps/irony_company_settings")

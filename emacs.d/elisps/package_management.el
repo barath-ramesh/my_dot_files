@@ -79,13 +79,13 @@ package-enable-at-startup
 			      dired-hacks-utils
 			      ;;doxymacs
 			      deft
-			      eldoc-eval
+			      ;; eldoc-eval
 			      ;; eldoc-extension
 			      electric-case
 			      ;; electric-spacing
 			      emms
 			      enclose
-			      erlang
+			      ;; erlang
 			      ess
 			      ;; etags
 			      ;; etags-select
@@ -104,7 +104,7 @@ package-enable-at-startup
 			      graphviz-dot-mode
 			      haml-mode
 			      haskell-mode
-			      header2
+			      ;; header2
 			      ;; help+
 			      highlight
 			      htmlize
@@ -144,7 +144,7 @@ package-enable-at-startup
 			      polymode
 			      powerline
 			      ;; pp+
-			      puppet-mode
+			      ;; puppet-mode
 			      restclient
 			      rtags
 			      rvm

@@ -8,7 +8,7 @@
 ;; Version:
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 28
+;;     Update #: 25
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -23,16 +23,16 @@
 ;;        :weight 'normal
 ;;        :width 'normal)
 
-;; (when (functionp 'set-fontset-font)
-;;   (set-fontset-font "fontset-default"
-;;		    'unicode
-;;		    (font-spec :family "DejaVu Sans Mono"
-;;			       :width 'normal
-;;			       :size 14.4
-;;			       :weight 'normal)))
+;;   (when (functionp 'set-fontset-font)
+;;     (set-fontset-font "fontset-default"
+;;        'unicode
+;;        (font-spec :family "DejaVu Sans Mono"
+;;       :width 'normal
+;;       :size 12.4
+;;       :weight 'normal))))
 
 (set-frame-font "DejaVu Sans Mono" nil t)
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 160)
 
 ;; (set-frame-font "Source Code Pro" nil t)
 ;; (set-face-attribute 'default nil :height 168)
